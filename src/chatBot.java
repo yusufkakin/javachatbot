@@ -26,6 +26,8 @@ daysWeek();
         zodiacSign = zodiacSign.substring(0,1).toUpperCase() + zodiacSign.substring(1).toLowerCase();
         System.out.println(zodiacSign + " it is! Are you in your 30s? Answer yes or no:");
         zodiacSign2 = scanner.nextLine();
+        System.out.println("Okay are you in your 20s? Answer yes or no:");
+        String zodiacSign3 = scanner.nextLine();
 
         if (zodiacSign.equals("Rat") && zodiacSign2.equals("yes")) {
             System.out.println("Okay, you are 38!");
@@ -63,10 +65,21 @@ daysWeek();
             System.out.println("Okay, you are 30!");
         } else if (zodiacSign.equals("Monkey") && zodiacSign2.equals("no")) {
             System.out.println("Okay, you are 18!");
-        } else
-            System.out.println("You are around 27!");
-
+        } else if (zodiacSign.equals("Rooster") && zodiacSign3.equals("yes")) {
+            System.out.println("Okay, you are 29!");
+        } else if (zodiacSign.equals("Rooster") && zodiacSign3.equals("no")) {
+            System.out.println("Okay, you are 17!");
+        } else if (zodiacSign.equals("Dog") && zodiacSign3.equals("yes")) {
+            System.out.println("Okay, you are 28!");
+        } else if (zodiacSign.equals("Dog") && zodiacSign3.equals("no")) {
+            System.out.println("Okay, you are 16!");
+        } else if (zodiacSign.equals("Pig") && zodiacSign3.equals("yes")) {
+            System.out.println("Okay, you are 27!");
+        } else if (zodiacSign.equals("Pig") && zodiacSign3.equals("no")) {
+            System.out.println("Okay, you are 15!");
         }
+
+    }
     public static void countNumber() {
     Scanner scanner = new Scanner(System.in);
         System.out.println("Okay, now I will count to any number you want so give me a number:");
@@ -101,7 +114,7 @@ daysWeek();
             System.out.println("I can also say that you have wisdom, but does not mean you are not young!");
         } else if(zodiacSign2.equals("no")){
             System.out.println("You are still young but you do have joy!");
-        };
+        }
     }
     public static void daysWeek () {
         Scanner scanner = new Scanner(System.in);
